@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CofeeHub</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+     <!--font awesome-->
+     <script src="https://kit.fontawesome.com/b8ce954428.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <!-- navigation bar -->
+            <nav class="navbar navbar-expand-lg   navbar-dark">    <!--now to see navbar horizontal adding a extra class navbar-expand-lg and background-dark and navbar-dakr-->
+                <a class="navbar-brand" href="">CofeeHub</a> <!-- just setting brand namme in nav bar -->           
+                <!-- we want a hamburger menu to drop when we lower our screen size-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartogglerdemo2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbartogglerdemo2">
+                    
+                    <ul class="navbar-nav ml-auto"> <!-- margin left =auto-->
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#testimonials" >Trending</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#reserve" >Reserve</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#giftcards" >Gift Cards</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#delivery" >Delivery</a>
+                        </li>
+                    </ul>
+                </div>  
+            </nav>
+
+            <div class="row">
+                <div class="col">
+                <h1 >LifE is Not Better Without a Cofee.</h1>
+                <p>Start Your Day with a Fresh Cup of Cofee</p>
+                <button class="btn btn-outline-light btn-lg download-b" type="button">Book a Table Now</button>
+                <button class="btn btn-outline-light btn-lg download-b" type="button">Register for Free</button>
+                </div>   <!--download-b is custom class to target buttons-->
+            </div> 
+        </div>
+        <div class="row adrs">
+            <div class="col-lg-2 ml-auto">
+                <h5>Adress:</h5>
+                <p>Lake Mall<br>KaliGhat Road,Kolkata</p>
+                <h5>Contact:</h5>
+                <p>+91-7718364<br>cofeehub@info.com<br>7:00am-10:00pm</p>
+            </div>
+        </div>
+    </section>
+    <section id="features">    <!--ic is custom class for designing-->
+        <div class="row">
+          <div class=" feature-box col-lg-4 ">
+            <i class="fa fa-check-circle fa-4x ic" aria-hidden="true"></i>
+            <h3>Fatest Delivery.</h3>
+            <p>Lightning-fast delivery at your doorstep.</p>
+          </div>
+          <div class=" feature-box col-lg-4 ">
+            <i class="fa-solid fa-mug-hot fa-4x ic"></i>
+            <h3>Variety</h3>
+            <p>Delight your palate with our exquisite menu selection.</p>
+          </div>
+          <div class=" feature-box col-lg-4">
+            <i class="fa fa-heart fa-4x ic" aria-hidden="true"></i>
+            <h3>Friendly Staffs.</h3>
+            <p>Personalized attention from our friendly staff to ensure your happiness.</p>
+        
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+
+    <section id="testimonials">
+        <hr>
+        <h2><strong>Trending</strong></h2>
+        <hr>
+        <div id="carouselExampleSlidesOnly" data-interval="3000" pause="hover" class="carousel slide cara" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <img class="item-img" src="images/Expresso.jpg" alt="expresso image">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="trending">Expresso</h2>
+                        <p>"Espresso is a concentrated and intense coffee beverage<br> that delivers a robust and complex flavor profile.<br>espresso is the foundation of many popular coffee-based drinks"</p>
+                        <button data-productid="12247"
+                        onclick="alert('Item added!');" 
+                         type="button" class="btn btn-success btn-lg">Order Now</button>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <img class="item-img" src="images/coldcofee.jpg" alt="cold cofee image">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="trending">Cold-Cofee</h2>
+                        <p>"Cold coffee is a refreshing and invigorating beverage, perfect for beating the summer heat while delighting your taste buds with its rich and smooth flavor."</p>
+                        <button data-productid="12247"
+                        onclick="alert('Item added!');"
+                          type="button" class="btn btn-success btn-lg">Order Now</button>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <img class="item-img" src="images/Latte.jpg" alt="Latte image">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="trending">Latte</h2>
+                        <p>"A latte is a popular coffee drink that combines espresso and steamed milk to create a creamy and indulgent beverage.<br>Often topped with a layer of frothed milk"</p>
+                        <button data-productid="12247"
+                        onclick="alert('Item added!');"
+                          type="button" class="btn btn-success btn-lg">Order Now</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="reserve">
+        <hr>
+        <h2>Reserve A Table Today</h2>
+        <hr>
+        <div class="row elm">
+            <div class="col-lg-6">
+                <img class="inside" src="images/inside.jpg" alt="interior">
+            </div>
+            <div class="col-lg-6 book">
+                <h3>Book A Table-</h3>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email-</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">PhoneNumber-</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tables To Book-</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="No.of.Tables" placeholder="No. of tables">
+                    </div>
+                    <button data-productid="12247"
+                    onclick="alert('Booking Sucessful!');"
+                     type="submit" class="btn btn-success btn-lg bookbtn">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="giftcards">
+        <h2 class="giftheading">Gift Cards</h2>
+        <hr>
+        <p>Simple and affordable gift cards for your and your collegues.</p>
+        <div class="row">
+          <div class=" pricing-list col-lg-4 col-md-6 ">
+    
+            <div class="card">
+              <div class="card-header">
+                <h2>₹250</h2>
+              </div>
+              <div class="card-body">
+                <button data-productid="12247"
+                onclick="alert('Product added!');"
+                 type="button" class="btn btn-default btn-md">
+                  <span class="glyphicon
+                      glyphicon-shopping-cart">
+                  </span>
+                  <b> Add to Cart </b>
+              </button>     
+              </div>
+            </div>
+    
+          </div>
+          <div class=" pricing-list col-lg-4 col-md-6">
+    
+            <div class="card">
+              <div class="card-header">
+                <h2>₹500</h2>
+              </div>
+              <div class="card-body">
+                <button data-productid="12247"
+                onclick="alert('Product added!');"
+                 type="button" class="btn btn-default btn-md">
+                  <span class="glyphicon
+                      glyphicon-shopping-cart">
+                  </span>
+                  <b> Add to Cart </b>
+              </button>     
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class=" pricing-list col-lg-4 col-md-6 ">
+    
+            <div class="card">
+              <div class="card-header">
+                <h2>₹750</h2>
+              </div>
+              <div class="card-body">
+                <button data-productid="12247"
+                onclick="alert('Product added!');"
+                 type="button" class="btn btn-default btn-md">
+                  <span class="glyphicon
+                      glyphicon-shopping-cart">
+                  </span>
+                  <b> Add to Cart </b>
+              </button>     
+              </div>
+            </div>
+    
+          </div>
+          <div class=" pricing-list col-lg-4 col-md-6 ">
+    
+            <div class="card">
+              <div class="card-header">
+                <h2>₹1000</h2>
+              </div>
+              <div class="card-body">
+                <button data-productid="12247"
+                onclick="alert('Product added!');"
+                 type="button" class="btn btn-default btn-md">
+                  <span class="glyphicon
+                      glyphicon-shopping-cart">
+                  </span>
+                  <b> Add to Cart </b>
+              </button>     
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class=" pricing-list col-lg-4 col-md-6 ">
+    
+            <div class="card">
+              <div class="card-header">
+                <h2>₹1500</h2>
+              </div>
+              <div class="card-body">
+                <button data-productid="12247"
+                onclick="alert('Product added!');"
+                 type="button" class="btn btn-default btn-md">
+                  <span class="glyphicon
+                      glyphicon-shopping-cart">
+                  </span>
+                  <b> Add to Cart </b>
+              </button> 
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="pricing-list col-lg-4 col-md-6">
+    
+            <div class="card">
+              <div class="card-header">
+                <h2>₹2000</h2>
+              </div>
+              <div class="card-body">
+                <button data-productid="12247"
+                onclick="alert('Product added!');"
+                 type="button" class="btn btn-default btn-md">
+                  <span class="glyphicon
+                      glyphicon-shopping-cart">
+                  </span>
+                  <b> Add to Cart </b>
+              </button> 
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+      <section id="delivery">
+        <hr>
+        <h2>Delivery</h2>
+        <hr>
+          <div class="row elma">
+            <div class="col-lg-6 del-page">
+               <h3>Free Delivery on Your First Order</h3>
+               <p>We Deliver items Across the Entire Area<br>Feel Free to Communicate or Track your Order</p>
+               <div class="form-check ">
+                <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  <i class="fa-solid fa-credit-card "></i> Credit/Debit Cards
+                </label>
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  <i class="fa-brands fa-google-pay fa-1x"></i> UPI/Wallets
+                </label>
+              </div>
+              <div class="form-check  ">
+                <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  <i class="fa-solid fa-wallet "></i> Cash on Delivery
+                </label>
+              </div>
+              <nav class="navbar navbar-primary  giftj">
+                 <ul class="navbar-nav ml-auto mr-auto">
+                  <li class="navbar-item">
+                    <a class="nav-link" href="#giftcards">Buy Gift Card</a>
+                  </li>
+                 </ul>
+              </nav>
+              <button data-productid="12247"
+              onclick="alert('Your Order Will Be Delivered Shortly!');"
+               class="btn btn-success btn-block btn-lg del-button">Order-></button>
+            </div>
+            <div class="col-lg-6">
+              <img class="delimage" src="images/cofeedel.jpg">
+            </div>
+          </div>
+      </section>
+      <section id="cta">
+
+        <h2 class="cta-word">Come and Get a Fresh Cup of Cofee Today.</h2>
+        <p>Get a Fresh Start for Your Day</p>
+        <button class="btn btn-secondary btn-lg download-b" type="button">Book a Table Now</button>
+        <button class="btn btn-secondary btn-lg download-b" type="button">Register for Free</button>
+      </section>
+      <footer id="footer">
+        <i class="fa-brands fa-twitter socials"></i>
+        <i class="fa-brands fa-facebook socials"></i>
+        <i class="fa-brands fa-instagram socials"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <p>© 2023 Copyright CofeeHub</p> 
+      </footer>
+
+
+    
+    
+</body>
+</html>
